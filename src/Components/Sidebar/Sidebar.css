@@ -1,0 +1,153 @@
+/* Sidebar Container */
+#sidebar {
+    grid-area: Sidebar;
+    width: 190px;
+    background-color: #040440;
+    color: white;
+    padding: 10px;
+   
+  }
+ 
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+.icon, .icon_header {
+  margin-right: 5px;
+}
+
+.close_icon {
+  display: none;
+  color: red;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+  .user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-heading {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .dashboard-heading h3 {
+    margin-left: 10px;
+  }
+   .dashboard-icon{
+    font-size:  30px;   
+ }
+  
+  .navigation {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .navigation li {
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items:center ;
+    gap: 1rem;
+
+  }
+
+  .navigation li:hover{
+    cursor: pointer;
+    background-color: rgb(45,45,105);
+    border-radius: 5px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+
+.user-profile {
+display: flex;
+width:170px;
+align-items: center;
+background-color:rgb(76, 76, 123) ;
+border-radius: 5px;
+padding: 5px 8px 5px 8px;
+position: absolute;
+bottom: 0;
+margin-bottom: 40px;
+}
+.user-profile:hover{
+    cursor: pointer;
+    background-color: rgb(45,45,105) ;
+    border-radius: 5px;
+}
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 5px;
+  
+}
+
+.user-profile h4 {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 100;
+
+
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  #sidebar {
+    
+    display: none;
+    height: 100%;
+  }
+
+  .close_icon {
+    display: block;
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .user-profile{
+    width:170;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    
+    display: none;
+    height: 100%;
+  }
+  .close_icon {
+    display: block;
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+}
